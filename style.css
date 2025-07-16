@@ -155,3 +155,40 @@ html, body{
    display: none;
 }
 
+#about {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    color: #fff;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
+    width: 100%;
+    background-color: black;
+}
+
+#about img {
+    width: 200px;
+}
+
+#textAbout {
+    width: 25rem;
+}
+
+#textAbout h5{
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+
+#textAbout p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+#textAbout a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 15px;
+    border: 1px solid #fff;
+    border-radius: 150px;
+}
