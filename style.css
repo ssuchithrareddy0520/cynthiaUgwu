@@ -115,13 +115,13 @@ html, body{
     color: #fff;
     padding-right: 3vw;
     padding-left: 3vw;
-    padding-top: 4vw;
+    padding-top: 19vw;
     background-color: black;
     width: 100%;
     height: 100vh;
 }
 
-/* .elem {
+.elem {
     width: 100%;
     border-top: 1px solid #888;
     padding: 3.8vw 3vw;
@@ -130,15 +130,15 @@ html, body{
     justify-content: space-between;
     padding-right: 0;
     position: relative;
-} */
+}
 
-/* .elem h1 {
+.elem h1 {
     text-transform: uppercase;
     font-size: 6vw;
     opacity: .7;
-} */
+}
 
-/* .elemlast {
+ .elemlast {
     border-bottom: 1px solid #888;
 }
 
@@ -147,10 +147,11 @@ html, body{
 
 }
 
+
 .elem img {
    position: absolute;
    z-index: 999;
    height: 140%;
    display: none;
-} */
+}
 
