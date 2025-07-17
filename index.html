@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="loco.css">
     <link rel="stylesheet" href="style.css">
     <title>Cynthia Ugwu</title>
 </head>
 
 <body>
-
+    <div id="minicircle"></div>
     <div id="main">
         <div id="hero">
             <div id="nav">
@@ -18,15 +19,25 @@
                 <h4>MENU+</h4>
             </div>
             <div id="heading">
-                <h1>Product</h1>
+                <div class="bounding">
+                    <h1 class="boundingelem">Product</h1>
+                </div>
                 <div class="blocktext">
-                    <h1 id="secondh1">Designer</h1>
-                    <h5>Based in toronto</h5>
+                    <div class="bounding">
+                        <h1 class="boundingelem" id="secondh1">Designer</h1>
+                    </div>
+                    <div class="bounding">
+                        <h5 class="boundingelem">Based in toronto</h5>
+                    </div>
                 </div>
             </div>
             <div id="smallHeading">
-                <h5>Available for Full Time & Freelance</h5>
-                <h5>work from Sep ‘24</h5>
+                <div class="bounding">
+                    <h5 class="boundingelem">Available for Full Time & Freelance</h5>
+                </div>
+                <div class="bounding">
+                    <h5 class="boundingelem">work from Sep ‘24</h5>
+                </div>
             </div>
             <div id="herofooter">
                 <a href="#">Previously worked at yml <i class="ri-arrow-right-up-line"></i></a>
@@ -89,6 +100,9 @@
 
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="script.js"></script>
 </body>
 
