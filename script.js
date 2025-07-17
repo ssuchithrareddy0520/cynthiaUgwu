@@ -34,12 +34,39 @@ function firstPageAni(){
 
 }
 
-function circleMouse(){
+var timeOut;
+
+function circleSkew(){
+    var xscale = 1;
+    var yscale = 1;
+    var xprev = 0;
+    var yprev = 0;
+    window.addEventListener("mousemove", function(dets){
+        clearTimeout(timeOut);
+        
+        xscale = gsap.utils.clamp(.8,1.2, dets.clientX - xprev);
+        yscale = gsap.utils.clamp(.8,1.2, dets.clientY - yprev);
+
+        xprev = dets.clientX;
+        yprev = dets.clientY;
+
+        circleMouse(xscale, yscale);
+
+        timeOut = setTimeout(function(){
+            document.querySelector("#minicircle").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1, 1)`;
+        }, 100);
+
+    });
+}
+
+circleSkew();
+
+function circleMouse(xscale, yscale){
     window.addEventListener("mousemove",function(dets){
         // this.document.querySelector("#minicircle").style.left = dets.x + "px";
         // this.document.querySelector("#minicircle").style.top = dets.y + "px";
 
-        document.querySelector("#minicircle").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
+        document.querySelector("#minicircle").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(${xscale}, ${yscale})`;
     })
 }
 
